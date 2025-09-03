@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login - Project Traker</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+     <h1>Login</h1>
+
+<!--Login form -->
+</form>
+<form id="loginform">
+  <label for="role" name="role"></label>
+  <select id="role" name="role">
+  <option value="sudent">Student</option>
+  <option value="supervisor">Supervisor</option>
+  <option value="panel">Panel</option>
+  <option value="admin">Admin</option>
+  </select>
+
+ <input type="email" id="LoginEmail" placeholder="Email" required>
+ <input type="password" id="LoginPassword" placeholder="Password" required>
+ <button type="submit">Login</button>
+</form>
+
+<p>Don't have an account? <a href="signup.html">SignUp</a></a></p>
+
+
+
+<!---Message for feedback-->
+<p id="loginMessage" class="message"></p></div>
+
+<script src="script.js"></script>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const role = document.getElementById("role").value;
+  });
+  </script>
+    
+    if (role==="student") {
+      window.location.href = "student-dashboard.html"
+    }else if (role==="supervisor") {
+      window.location.href = "supervisor-dashboard.html"
+    }else if(role==="panel") {
+      window.location.href = "panel-dashboard.html"
+    }else if (role==="admin") {
+      window.location.href = "admin-dashboard.html"
+    };
+  </script>
+
+ </body>
+</html>

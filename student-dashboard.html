@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+ </head>
+ <body>
+   <header>
+      <h2>Welcome student! </h2>
+   </header>
+
+    <div class="topnav">
+     <a href="#" onclick="showSection('profile')">Profile</a>
+     <a href="#" onclick="showSection('submit')">Submit Project Idea</a>
+     <a href="#" onclick="showSection('consult')">Consultations</a>
+     <a href="#" onclick="showSection('feedback')">Feedback</a>
+     <a href="#" onclick="logoutUser(event)" >Logout </a>
+  </div>
+
+   <main>
+   <section id="profile" class="active">
+      <h3>Profile</h3> 
+
+         <p><strong>Name:</strong></p>
+         <p><strong>Registration Number:</strong></p>
+         <p><strong>Class:</strong></p>
+         <p><strong>Email:</strong></p>
+         <p><strong>Pone:</strong></p><p>
+     </section>
+     
+     <section id="submit">
+      <h3>Submit Project Idea</h3>
+      <form id="pojectForm">
+         <label>Project Title:</label><br>
+         <input type="text" placeholder="Enter Project title"><br><br>
+         <label>Description</label><br>
+         <textarea id="projectDesc" placeholder="Describe your Poject Idea" required></textarea><br><br.
+         <button type="submit">Submit</button>
+      </form>
+     </section>
+
+
+     <section id="consult">
+      <h3>Consultations</h3>
+      <p>Consultation schedule will appear here.</p>
+     </section>
+
+     <section id="feedback">
+      <h3>Supervisor Feedback</h3>
+      <p>Feedback will appear here.</p>
+     </section>
+
+   </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

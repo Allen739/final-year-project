@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+ </head>
+ <body>
+   <header>
+      <h2>Welcome, Supervisor! </h2>
+   </header>
+
+    <div class="topnav">
+     <a href="#" onclick="showSection('students')">Assigned Students</a>
+     <a href="#" onclick="showSection('ideas')">Approve/Reject ideas</a>
+     <a href="#" onclick="showSection('consult')">Consultations</a>
+     <a href="#" onclick="showSection('feedback')">Feedback</a>
+     <a href="#" class="logout-link" >Logout </a>
+    
+  </div>
+
+<main>
+   <section id="students" class="active">
+      <h3>Assigned Students</h3>
+      <p>List of students assigned to you will appear here.</p> 
+     </section>
+     
+     <section id="ideas">
+      <h3>Approve/Reject Idea</h3>
+      <p>Student project ideas for approval will appear here</p>
+      </form> 
+     </section>
+
+     <section id="consult">
+      <h3>Consultations</h3>
+      <p>Schedule or view Consultations.</p>
+     </section>
+
+     <section id="feedback">
+      <h3>Feedback</h3>
+      <p>Provide Feedback to student here.</p>
+     </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+
+ </head>
+ <body>
+   <header>
+      <h2>Welcome, our Admin! </h2>
+   </header>
+
+    <div class="topnav">
+     <a href="#" onclick="showSection('users')">Manage Users</a>
+     <a href="#" onclick="showSection('setting')">System Settings</a>
+     <a href="#" onclick="showSection('report')">Reports</a>
+     <a href="#" onclick="logoutUser(event)" >Logout </a>
+       </div>
+
+<main>
+   <section id="users" class="active">
+      <h3>Manage Users</h3>
+      <p>Add, edit or remove users here.</p> 
+     </section>
+     
+     <section id="setting">
+      <h3>System Settings</h3>
+      <p>Systemconfiguration, roless and permissions will appear here.</p>
+     </section>
+
+     <section id="report">
+      <h3>Reports</h3>
+      <p>Generate project reports,statistics and analytics here.</p>
+     </section>
+</main>
+
+
+</body>
+</html>

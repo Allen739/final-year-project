@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+ </head>
+ <body>
+   <header>
+      <h2>Welcome, to the Panel! </h2>
+   </header>
+
+    <div class="topnav">
+     <a href="#" onclick="showSection('review')">Students Under Review</a>
+     <a href="#" onclick="showSection('assessment')">Assessment</a>
+     <a href="#" onclick="showSection('marks')">Marks & Grades</a>
+     <a href="#" onclick="showSection('feedback')">Feedback</a>
+     <a href="#" class="logout-link" >Logout </a>
+     
+  </div>
+
+<main>
+   <section id="review" class="active">
+      <h3>Student Under Review</h3>
+      <p>List of students undeer review will appear here.</p> 
+     </section>
+     
+     <section id="assessment">
+      <h3>Assessment</h3>
+      <p>Assessment criterias and forms will appear here.</p>
+     </section>
+
+     <section id="marks">
+      <h3>Marks & Grades</h3>
+      <p>Final marks and grading section will appear here.</p>
+     </section>
+
+     <section id="feedback">
+      <h3>Feedback</h3>
+      <p>Provide Feedback to student here.</p>
+     </section>
+</main>
+
+</body>
+</html>

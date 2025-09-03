@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign UP - Project Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <h1>Sign Up</h1>
+
+        <!--!SignUp Form-->
+<form id="signupform">
+<input type="text" id="FirstName" placeholder="FirstName" required>
+<input type="text" id="MiddleName" placeholder="MiddleName" required>
+<input type="text" id="LastName" placeholder="LastName" required>
+ <input type="email" id="signupEmail" placeholder="Email" required>
+ <input type="number" id="RegistrationNo" placeholder="RegistrationNo" required>
+ <input type="number" id="phoneNumber" placeholder="PhoneNumber" required>
+ <input type="text" id="class" placeholder="Class" required>
+ <input type="password"  id="password" placeholder="password" required>
+  <input type="password"  id="password" placeholder="Confirm Password" required>
+
+  <button type="submit" >Submit</button>
+ </form>
+
+ <p>Already have an account? <a href="index.html" >Login</a></p>
+
+ <!--Message are for feedback-->
+ <p id="signupMessage" class="message" ></p>
+     </div>
+
+     <script src="script.js" ></script>
+</body>
+</html>

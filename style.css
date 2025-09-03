@@ -1,0 +1,148 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Center container*/
+.container {
+max-width: 400px;
+margin: 50px auto;
+padding:20px;
+background: white;
+border-radius:10px;
+box-shadow: 0 5px 15px rgba (0,0,0,0.1);
+}
+
+/*forms*/
+Input, select, button {
+width:100%;
+padding:10px;
+margin-bottom: 15px;
+border-radius: 8px;
+border: 1px solid #ccc; 
+}
+
+/*buttons*/
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Message*/
+.message {
+    color: red;
+    font-weight: bold;
+}
+
+/*cards container*/
+.cards.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/*individual card*/
+.card {
+    flex: 1 1 calc(33% - 10px);
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+
+}
+
+/*hover animation*/
+.card.hover {
+    transform: translateY(-5px);
+    background-color: #0056b3;
+}
+/*individual card*/
+.topnav a {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.topnav a.active{
+    background-color: #0260b8;
+    color:white;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100;
+}
+
+.topnav a {
+    float: left;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.topnav a.hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #015eb4;
+    color:white;
+}
+
+.logout-link{
+    float: left;
+}
+
+main {
+    padding:2rem;
+}
+
+main section{
+    display:none;
+}
+
+main section.active{
+    display:block;
+    background:white;
+    padding:1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(o,0,0,0.1);
+}
+
+label{
+    display:block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input,textarea,button{
+    width: 100%;
+    padding:0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
